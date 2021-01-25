@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Personal API</title>
+        <link rel="stylesheet" type="text/css" href="global.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div id="contenedor">
+            <header>
+                <img src="https://logodownload.org/wp-content/uploads/2019/09/yahoo-logo.png">
+                <div class="buscador">
+                    <input type="text" onchange="searchNews(event)">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div>
+                    <nav>
+                        <li><button>Iniciar Sesión</button></li>
+                        <li><i class="fas fa-bell"></i></li>
+                        <li><i class="fas fa-envelope"></i> Correo</li>
+                    </nav>
+                </div>
+            </header>
+            <nav id="mainNav"></nav>
+            <div id="add"></div>
+            <div id="container">
+                
+                <div id="main">
+                    
+                    <div id="headlinenews">
+                        <div class="mainheadline"></div>
+                        <div class="nextnews"></div>
+                    </div>
+                    <div id="newsList"></div>
+                </div>
+                <div id="side">
+                    <h3> <i class="fas fa-newspaper"></i> Lo más buscado</h3>
+                    <ol>
+                        <li>Covid</li>
+                        <li>Donald Trum</li>
+                        <li>Whats App</li>
+                        <li>Noticias</li>
+                    </ol>
+                    <br><br>
+                    <input class="input" onchange="getCd(event)" name="cd" type="text" placeholder="Selecciona una ciudad de méxico">
+                    <div class="weather"></div><br><br>
+                    <input class="input" onchange="getCovid(event)" name="covid" type="text" placeholder="Selecciona un país">
+                    <div id="covid"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
